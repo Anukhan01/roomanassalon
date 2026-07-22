@@ -971,7 +971,32 @@
     text-decoration: none;
     transition: all 0.3s;
   }
-  .social-link:hover { border-color: var(--rose-gold); color: var(--rose-gold); }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-4px);
+    background: #d4af37;
+    color: #fff;
+}
 
   /* ── DIVIDER ── */
   .section-divider {
@@ -1655,10 +1680,36 @@
         <span class="tagline">& Fitness Club · Est. in PECHS Block 2</span>
         <p>A luxury beauty sanctuary and fitness club led by Roomana Ali — certified beauty expert, bridal artist, and wellness educator with 18+ years of excellence.</p>
         <div class="social-links" style="margin-top:24px;">
-          <a href="https://wa.me/923003588453" class="social-link" title="WhatsApp" target="_blank">💬</a>
-          <a href="#" class="social-link" title="Instagram">📸</a>
-          <a href="#" class="social-link" title="Facebook">👍</a>
-        </div>
+
+  <a href="https://wa.me/923003588453"
+     class="social-link"
+     title="WhatsApp"
+     target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://www.facebook.com/Roomanassalon"
+     class="social-link"
+     title="Facebook"
+     target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/roomanassalon/"
+     class="social-link"
+     title="Instagram"
+     target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.tiktok.com/@roomanassalon"
+     class="social-link"
+     title="TikTok"
+     target="_blank">
+    <i class="fab fa-tiktok"></i>
+  </a>
+
+</div>
       </div>
       <div class="footer-col">
         <h5>Services</h5>
